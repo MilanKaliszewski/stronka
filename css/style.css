@@ -115,7 +115,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	height: 70vh;
 	overflow: hidden;
 	margin-top: 86px;
 	background-image: url('../photos/tlo.png');
