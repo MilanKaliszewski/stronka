@@ -12,6 +12,7 @@ body{
 .menu {
 	display: flex;
 	position: fixed;
+	background: #fff;
 	border-bottom: solid 1px;
 	width: 100%;
 	box-shadow: 0px -4px 15px 5px black;
@@ -93,4 +94,33 @@ body{
 .item a:hover:after { 
   width: 90%; 
   left: 5%;
+}
+
+.banner {
+	width: 1024px;
+	height: 576px;
+	filter: blur(3px);
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+.witamy {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	overflow: hidden;
+	margin-top: 86px;
+}
+
+.hej {
+	z-index: 4;
+	position: absolute;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 3px 3px 7px black;
 }
