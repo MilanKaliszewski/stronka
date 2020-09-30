@@ -1,46 +1,90 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="icon" href="photos/icon.png" type="image/icon type">
-		<title>Walker's P&I Design - Strona główna</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-	</head>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="photos/icon.png" type="image/icon type">
+    <title>Walker's P&I Design - Strona główna</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a29ada8a9f.js" crossorigin="anonymous"></script>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</head>
+
 <body>
-		<nav class="menu">
-			<a href="#" class="logo"><img src="photos/logo.png" alt="logo serwisu" class="logo"/></a>
-			<ul class="menu-items">
-				<li class="item-active"><a href="#" class="item-active">Home</a></li>
-				<li class="item"><a href="./About/index.html" class="item">About</a></li>
-				<li class="item"><a href="./Houses/index.html" class="item">Houses</a></li>
-				<li class="item"><a href="./Contact/index.php" class="item">Contact</a></li>
-			</ul>
-		</nav>
-	<section class="main">
-		<article class="witamy">
-			<img src="photos/Cjteczh.jpg" alt="Los Santos Tower" class="banner"/>
-			<h1 class="hej">Witamy na stronie Walker's P&amp;I Design!</h1>
-	    </article>
-		<article class="container2">
-			<div class="naglowek">
-				<h1 class="h">Wybierz mądrze, wybierz Nas!</h1>
-				<p class="paragraf">Walker's P&amp;I to firma z wieloletnim doświadczeniem na rynku,<br> posiadamy nieruchomości spośród, których każdy wybierze coś dla siebie!<br> Priorytetową dla Nas jest sprawa zadowolenia naszych klientów - czyli Was!<br> Dziękujemy za tak liczne lata zaufania i żymy sobie jak i Wam,<br> nasi drodzy klienci kolejnych wspaniałych lat współpracy<br> <a href="./About/index.html" class="link-w-tekscie"><mark>Więcej o historii firmy na rynku...</mark></a></p>
-			</div>
-			<div class="zdjecie">
-				<img src="photos/placeholder-300x400.png" alt="placeholder"/>
-			</div>
-		</article>
-		<article class="container">
-			<!--<div class="naglowek1">-->
-			<h1 class="h-nier">Nasze nieruchomości!</h1>
-			<!--</div>-->
-			<div class="zdjecie1">
-				<img src="photos/placeholder-300x400.png" alt="placeholder" class="dom"/>
-				<img src="photos/placeholder-300x400.png" alt="placeholder" class="dom"/>
-				<img src="photos/placeholder-300x400.png" alt="placeholder" class="dom"/>
-			</div>
-		</article>
+    <i class="fas fa-angle-double-up scrollup" onclick="topFunction()" id="scroll" title="Wróc na górę"></i>
+    <nav class="menu">
+        <a href="#" class="logo"><img src="photos/logo.png" alt="logo serwisu" class="logo" /></a>
+        <ul class="menu-items">
+            <li class="item-active"><a href="#" class="item-active">Home</a></li>
+            <li class="item"><a href="./About/index.html" class="item">About</a></li>
+            <li class="item"><a href="./Houses/index.html" class="item">Houses</a></li>
+            <li class="item"><a href="./Contact/index.php" class="item">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <article class="witamy">
+            <img src="photos/Cjteczh.jpg" alt="Los Santos Tower" class="banner" />
+            <h1 class="hej">Witamy na stronie Walker's P&amp;I Design!</h1>
+        </article>
+        <article class="container2">
+            <div class="naglowek">
+                <h1 class="h">Wybierz mądrze, wybierz Nas!</h1>
+                <p class="paragraf">Walker's P&amp;I to firma z wieloletnim doświadczeniem na rynku,<br> posiadamy nieruchomości spośród, których każdy wybierze coś dla siebie!<br> Priorytetową dla Nas jest sprawa zadowolenia naszych klientów - czyli Was!<br> Dziękujemy
+                    za tak liczne lata zaufania i żymy sobie jak i Wam,<br> nasi drodzy klienci kolejnych wspaniałych lat współpracy<br> <a href="./About/index.html" class="link-w-tekscie"><mark>Więcej o historii firmy na rynku...</mark></a></p>
+            </div>
+            <div class="zdjecie">
+                <img src="photos/placeholder-300x400.png" alt="placeholder" />
+            </div>
+        </article>
+        <article class="container">
+            <h1 class="h-nier">Nasze nieruchomości!</h1>
+            <div class="zdjecie1">
+                <img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom" />
+                <img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom" />
+                <img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom" />
+            </div>
+            <input type="button" name="more" class="zobaczwiecej" value="See more..." onclick="window.location.href='/Houses/index.html'">
+
+        </article>
+    </section>
+    <br>
+    <section class="stopka">
+        <div class="social">
+            <h1>Social media:</h1>
+            <div class="socialicon">
+                <i class="fab fa-twitter-square fa-3x twit">
+                </i>
+                <i class="fab fa-facebook-square fa-3x fb"></i>
+                <i class="fab fa-google-plus-square fa-3x gpl"></i>
+            </div>
+        </div>
+        <div class="copy">
+            <h1>2020 © by <a href="htttps://devgaming/profile/157936-milan/" class="">MiLaN</a></h1>
+        </div>
     </section>
 </body>
+
 </html>
