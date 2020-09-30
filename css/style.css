@@ -139,11 +139,12 @@ body{
 	/*background-image: url('../photos/tlo.png');*/
 	background: white;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	align-content: center;
 	padding-top: 1%;
 	flex-wrap: wrap;
 	padding-bottom: 1%;
+	flex-direction: column;
 }
 
 .container2 {
@@ -195,15 +196,20 @@ mark {
 }
 
 .naglowek1 {
-	margin-right: 15%;
-	order: 2;
-
+	order: 1;
 }
 
 .zdjecie1 {
-	margin-left: 7%;
-	order: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 70vw; 
+	order: 2;
+}
 
+.h-nier {
+	font-size: 35px;
+	order: 1;
 }
 
 @media screen and (max-width: 1300px) and (max-height: 2000px){
@@ -212,6 +218,10 @@ mark {
 	}
 	
 	.h{
+		font-size: 4vw;
+	}	
+	
+	.h-nier{
 		font-size: 4vw;
 	}
 	
@@ -228,6 +238,7 @@ mark {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin: 0;
 	}
 	
 	.zdjecie > img{
@@ -278,4 +289,10 @@ mark {
 		.zdjecie1 > img{
 		display: none;
 		}
+}
+
+
+
+.dom {
+
 }
