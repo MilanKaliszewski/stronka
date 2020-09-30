@@ -159,7 +159,7 @@ body{
 
 .naglowek {
 	margin-left: 7%;
-
+	order: 2;
 }
 
 .tresc {
@@ -194,6 +194,18 @@ mark {
 	order: 2;
 }
 
+.naglowek1 {
+	margin-right: 15%;
+	order: 2;
+
+}
+
+.zdjecie1 {
+	margin-left: 7%;
+	order: 1;
+
+}
+
 @media screen and (max-width: 1300px) and (max-height: 2000px){
 	.hej{
 		font-size: 5.3vw;
@@ -218,11 +230,33 @@ mark {
 		align-items: center;
 	}
 	
+	.zdjecie > img{
+		justify-content: center;
+		align-items: center;
+		width: 30vw;
+		height: auto;
+	}
+	
+	.zdjecie1{
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		order: 3;
+		margin-left: 0;
+		margin-right: 7%;
+	}
+	
 	.zdjecie1 > img{
 		justify-content: center;
 		align-items: center;
 		width: 30vw;
 		height: auto;
+	}
+	
+	.naglowek1{
+		margin-right: 0;
+		margin-left: 7%;
 	}
 	
 	@media screen and (max-width: 550px){
@@ -239,6 +273,9 @@ mark {
       	}
 		.zdjecie > img{
 		display: none;
-	}
-	}
+		}
+		
+		.zdjecie1 > img{
+		display: none;
+		}
 }
