@@ -101,13 +101,13 @@ body{
 	height: auto;
 	filter: blur(3px);
 	box-shadow: 0px 0px 15px black;
+	min-width: 700px;
 }
 
 .main {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
 }
 
 .witamy {
@@ -118,13 +118,12 @@ body{
 	height: 70vh;
 	overflow: hidden;
 	margin-top: 86px;
-	background-image: url('../photos/tlo.png');
 }
 
 .hej {
 	z-index: 4;
 	position: absolute;
-	font-size: 45px;
+	font-size: 60px;
 	color: #fff;
 	text-shadow: 3px 3px 7px black;
 }
@@ -143,6 +142,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 1%;
+	flex-wrap: wrap;
 	padding-bottom: 1%;
 }
 
@@ -153,6 +153,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 1%;
+	flex-wrap: wrap;
 	padding-bottom: 1%;
 }
 
@@ -167,12 +168,14 @@ body{
 	text-align: justify;
 	margin-left: 7%;
 }
-.zdjecie1 {
+.zdjecie {
 	margin-right: 7%;
+	order: 3;
 }
 
 .link-w-tekscie {
 	color: #555555;
+	text-decoration: none;
 }
 
 mark {
@@ -181,3 +184,61 @@ mark {
 }
 
 
+
+.h {
+	font-size: 35px;
+	order: 1;
+}
+
+.paragraf {
+	order: 2;
+}
+
+@media screen and (max-width: 1300px) and (max-height: 2000px){
+	.hej{
+		font-size: 5.3vw;
+	}
+	
+	.h{
+		font-size: 4vw;
+	}
+	
+	.paragraf{
+		font-size: 2vw;
+	}
+	
+	.banner{
+		height: 100vh;
+	}
+	
+	.zdjecie{
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.zdjecie1 > img{
+		justify-content: center;
+		align-items: center;
+		width: 30vw;
+		height: auto;
+	}
+	
+	@media screen and (max-width: 550px){
+      	.menu-items{
+          	display: block;
+      	}
+      	.item{
+          	display: block;
+		 	 text-align: center;
+      	}
+		.item-active{
+         	 display: block;
+		  	text-align: center;
+      	}
+		.zdjecie > img{
+		display: none;
+	}
+	}
+}
