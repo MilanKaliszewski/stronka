@@ -147,12 +147,13 @@ body{
 }
 
 .container2 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/*background-image: url('../photos/tlo-dark.png');*/
 	background: #272727;
 	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 .naglowek {
