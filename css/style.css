@@ -30,8 +30,8 @@
     }
     
     .logo {
-        width: 198px;
-        height: 86px;
+        max-width: 198px;
+        max-height: 86px;
         margin-left: 1%;
         margin-bottom: 0.1%;
         margin-top: 0.1%;
@@ -381,7 +381,12 @@
 
 @media screen and (max-width: 550px) {
 	
-	
+	.logo{
+		width: 50vw;
+		margin-top: 1vh;
+		margin-left: 1vh;
+		height: auto;
+	}
     .menu-items {
         display: block;
     }
@@ -389,6 +394,11 @@
         display: block;
         text-align: center;
     }
+	
+	.scrollup{
+    font-size: 15vw;
+}
+	
     .item-active {
         display: block;
         text-align: center;
