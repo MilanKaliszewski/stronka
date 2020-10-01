@@ -38,7 +38,6 @@
     }
     
     .scrollup {
-        display: none;
         color: #1C28AF;
         font-size: 7vw;
         align-self: flex-end;
@@ -46,6 +45,7 @@
         right: 1%;
         position: fixed;
         z-index: 99;
+		display: none;
     }
     
     .scrollup:hover {
@@ -103,6 +103,14 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+.dom1 {
+	order: 1;
+}
+
+.dom3 {
+	order: 3;
+}
     
     .twit {
         order: 1;
@@ -269,6 +277,7 @@
         justify-content: space-between;
         width: 70vw;
         order: 2;
+		flex-wrap: wrap;
     }
     
     .h-nier {
@@ -310,24 +319,37 @@
             height: auto;
         }
         .zdjecie1 {
+			margin: 0;
             width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
             order: 3;
             margin-left: 0;
-            margin-right: 7%;
+            margin-right: 0%;		
+			
         }
+		
         .zdjecie1>img {
-            justify-content: center;
-            align-items: center;
-            width: 30vw;
+			margin: 0;
+            width: 40vw;
+			justify-content: center;
+			align-content: center;
             height: auto;
+			max-height: 300px;
+			max-width: 300px;
+			
         }
         .naglowek1 {
             margin-right: 0;
             margin-left: 7%;
         }
+		
+		.dom1{
+			padding-top: 5vh;
+			padding-bottom: 5vh;
+		}
+		
         @media screen and (max-width: 550px) {
             .menu-items {
                 display: block;
@@ -343,8 +365,8 @@
             .zdjecie>img {
                 display: none;
             }
-            .zdjecie1>img {
-                display: none;
-            }
         }
     }
+#scroll {
+	display: none;
+}
