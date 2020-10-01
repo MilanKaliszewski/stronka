@@ -328,7 +328,7 @@
     font-size: 4vw;
 }
 .paragraf {
-    font-size: 2vw;
+    font-size: 4vw;
 }
 .banner {
     height: 100vh;
@@ -380,6 +380,8 @@
 }
 
 @media screen and (max-width: 550px) {
+	
+	
     .menu-items {
         display: block;
     }
