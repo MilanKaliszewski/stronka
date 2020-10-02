@@ -379,7 +379,7 @@ input[type=text]{
     padding: 10px;
     transition: 0.2s;
     font-size: 14px;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 input[type=text]:hover{
     box-shadow: 0 0 10px 5px rgba(120, 120, 120, 0.6);
@@ -403,11 +403,10 @@ input[type=submit]{
     transition: 0.2s;
     margin-top: 30px;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 input[type=submit]:hover{
     box-shadow: 0 0 10px 5px rgba(120, 120, 120, 0.6);
-    border-radius: 20px;
 }
 input[type=submit]:focus{
     font-size: 23px;
@@ -422,11 +421,10 @@ input[type=submit]:focus{
     padding: 10px;
     transition: 0.2s;
     font-size: 14px;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 #contact_content:hover{
     box-shadow: 0 0 10px 5px rgba(120, 120, 120, 0.6);
-    border-radius: 20px;
 }
 #contact_content:focus{
     transition: 0.2s;
