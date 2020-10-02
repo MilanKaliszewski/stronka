@@ -383,7 +383,6 @@ input[type=text]{
 }
 input[type=text]:hover{
     box-shadow: 0 0 10px 5px rgba(120, 120, 120, 0.6);
-    border-radius: 20px;
 }
 input[type=text]:focus{
     background-color: #979797;
