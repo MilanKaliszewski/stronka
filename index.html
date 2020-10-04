@@ -1,24 +1,30 @@
 <!doctype html>
-<html>
+<html lang="pl">
 
 <head>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="photos/icon.png" type="image/icon type">
     <title>Walker's P&I Design - Strona główna</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a29ada8a9f.js" crossorigin="anonymous"></script>
-    <script>
+    
+</head>
+
+<body>
+    <i class="fas fa-angle-double-up scrollup" onclick="topFunction()" id="scroll" title="Wróc na górę"></i>
+	<script>
         //Get the button:
-        mybutton = document.getElementById("myBtn");
+        mybutton = document.getElementById("scroll");
 
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {
             scrollFunction()
         };
-
+		
         function scrollFunction() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            if (document.body.scrollTop > (window.innerHeight * 0.1) || document.documentElement.scrollTop > ((window.innerHeight * 0.1))) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";
@@ -31,10 +37,6 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
-</head>
-
-<body>
-    <i class="fas fa-angle-double-up scrollup" onclick="topFunction()" id="scroll" title="Wróc na górę"></i>
     <nav class="menu">
         <a href="#" class="logo"><img src="photos/logo.png" alt="logo serwisu" class="logo" /></a>
         <ul class="menu-items">
@@ -62,12 +64,12 @@
         <article class="container">
             <h1 class="h-nier">Nasze nieruchomości!</h1>
             <div class="zdjecie1">
-                <img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom" />
-                <img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom" />
-                <img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom" />
+                	<img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom1" />
+                	<img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom" />
+                <img src="photos/placeholder-300x300.webp" alt="placeholder" class="dom3" />
+           
             </div>
-            <input type="button" name="more" class="zobaczwiecej" value="See more..." onclick="window.location.href='/Houses/index.html'">
-
+            <input type="button" name="more" class="zobaczwiecej" value="See more..." onclick="window.location.href='Houses/index.html'">
         </article>
     </section>
     <br>
