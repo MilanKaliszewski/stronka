@@ -23,20 +23,13 @@ session_start();
 		</nav>
 		<section class="formwrapper">
 		    <form action="contactaction.php" method="post" class="formularz">
-		        E-MAIL<br>
-		        <input type="text" placeholder="Link do profilu na forum" name="customer_email">
-		          <br><br>IMIĘ<br>
-		        <input type="text" placeholder="Imię IC" name="customer_name">
-		        <br><br>NAZWISKO<br>
-		        <input type="text" placeholder="Nazwisko IC" name="customer_surname">
-		        <br><br>TEMAT<br>
-		        <input type="text" placeholder="Temat" name="contact_topic">
-		        <br><br>TREŚĆ<br>
-		        <textarea name="contact_content" id="contact_content" cols="30" rows="10" placeholder="Wpisz tutaj treść swojej wiadomości" maxlength="490"></textarea>
-		        <?php 
-                echo $_SESSION['somethingwrong'];
-                ?>
-		        <br><input type="submit" value="Wyślij formularz">
+		        
+		        <input type="url" placeholder="E-mail ((Link do profilu na forum))" name="customer_email"><br>
+		        <input type="text" placeholder="Temat" class="contact_topic" name="contact_topic"><br>
+		        <input type="text" placeholder="Imię" name="customer_name">
+		        <input type="text" placeholder="Nazwisko" name="customer_surname"><br>
+		        <textarea name="contact_content" id="contact_content" cols="30" rows="10" placeholder="Wpisz tutaj treść swojej wiadomości" maxlength="640"></textarea>
+		        <br><input type="submit" value="WYŚLIJ">
 		    </form>
 		</section>
 	</body>

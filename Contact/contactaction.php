@@ -1,7 +1,6 @@
 <?php
 //https://discordapp.com/api/webhooks/761281303197909033/z0-K_7i1hqhRUzmjKb0vfEvB0SC1EYkT7pWD3UQZlxQMuRYBzdK1AcU5OeTohqbiHJs8
 if(!$_POST['customer_email'] || !$_POST['customer_name'] || !$_POST['customer_surname'] || !$_POST['contact_topic'] || !$_POST['contact_content']) { 
-    $_SESSION['somethingwrong'] = "<span style='color: red; font-size: 25px;'>WPISZ WSZYSTKIE DANE!</span>";
     header('location:index.php');
 }
 else{
@@ -13,7 +12,7 @@ $sname = $_POST['customer_surname'];
 $topic = $_POST['contact_topic'];
 $content = $_POST['contact_content'];
 $json_data = json_encode([
-    "content" => "@everyone",
+    "content" => "@eve.ryone",
     "username" => "Sekretarka",
     "tts" => false,
     "embeds" => [
