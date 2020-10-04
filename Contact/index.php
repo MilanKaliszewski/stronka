@@ -24,12 +24,12 @@ session_start();
 		<section class="formwrapper">
 		    <form action="contactaction.php" method="post" class="formularz">
 		        
-		        <input type="url" placeholder="E-mail ((Link do profilu na forum))" name="customer_email"><br>
-		        <input type="text" placeholder="Temat" class="contact_topic" name="contact_topic"><br>
-		        <input type="text" placeholder="Imię" name="customer_name">
-		        <input type="text" placeholder="Nazwisko" name="customer_surname"><br>
-		        <textarea name="contact_content" id="contact_content" cols="30" rows="10" placeholder="Wpisz tutaj treść swojej wiadomości" maxlength="640"></textarea>
-		        <br><input type="submit" value="WYŚLIJ">
+		        <input type="url" placeholder="E-MAIL ((Link do profilu))" name="customer_email"><br>
+		        <input type="text" placeholder="SUBJECT" class="contact_topic" name="contact_topic"><br>
+		        <input type="text" placeholder="NAME" name="customer_name">
+		        <input type="text" placeholder="SURNAME" name="customer_surname"><br>
+		        <textarea name="contact_content" id="contact_content" cols="30" rows="10" placeholder="Here write your message to us!" maxlength="640"></textarea>
+		        <br><input type="submit" value="SUBMIT">
 		    </form>
 		</section>
 	</body>
