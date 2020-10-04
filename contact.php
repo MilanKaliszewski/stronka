@@ -1,5 +1,4 @@
 <?php
-//by SzelsoN
 error_reporting(0);
 session_start();
 //https://discordapp.com/api/webhooks/761281303197909033/z0-K_7i1hqhRUzmjKb0vfEvB0SC1EYkT7pWD3UQZlxQMuRYBzdK1AcU5OeTohqbiHJs8
