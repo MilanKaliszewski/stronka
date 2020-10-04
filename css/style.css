@@ -1,3 +1,4 @@
+    @import url(../Contact/style.css);
     @charset "utf-8";
     /* CSS Document */
     
@@ -45,7 +46,7 @@
         right: 1%;
         position: fixed;
         z-index: 99;
-		display: none;
+        display: none;
     }
     
     .scrollup:hover {
@@ -103,14 +104,14 @@
         flex-direction: row;
         justify-content: space-around;
     }
-
-.dom1 {
-	order: 1;
-}
-
-.dom3 {
-	order: 3;
-}
+    
+    .dom1 {
+        order: 1;
+    }
+    
+    .dom3 {
+        order: 3;
+    }
     
     .twit {
         order: 1;
@@ -139,7 +140,6 @@
         background: white;
         border-top: solid 1px;
         width: 100%;
-        height: 3vh;
         justify-content: space-between;
         box-shadow: 0px 0px 0px 0px white, 0px 4px 15px 5px black;
     }
@@ -237,8 +237,6 @@
         order: 2;
     }
     
-
-
     .tresc {
         order: 3;
         width: 40%;
@@ -280,7 +278,7 @@
         justify-content: space-between;
         width: 70vw;
         order: 2;
-		flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     
     .h-nier {
@@ -288,123 +286,119 @@
         order: 1;
     }
     
-.zobaczwiecej {
-	background-color: #1c28af;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
-	padding: 14px 21px;
-	text-decoration: none;
-	order: 5;
-	border: 0;
-	margin-top: 3vh;
-
-}
-.zobaczwiecej:hover {
-	background-color:#0061a7;
-}
-.zobaczwiecej:focus{
-	outline: none;
-}
-.zobaczwiecej:active {
-	position:relative;
-	top:1px;
-}
-
- #scroll {
-	display: none;
-}   
-@media screen and (max-width: 1300px) and (max-height: 2000px) {
-.hej {
-    font-size: 5.3vw;
-}
-.h {
-    font-size: 4vw;
-}
-.scrollup{
-    font-size: 5vh;
-}
-.h-nier {
-    font-size: 4vw;
-}
-.paragraf {
-    font-size: 4vw;
-}
-.banner {
-    height: 100vh;
-}
-.zdjecie {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-.zdjecie>img {
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: auto;
-}
-.zdjecie1 {
-    margin: 0;
-    width: 100vw;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    order: 3;
-    margin-left: 0;
-    margin-right: 0%;		
-
-}
-
-.zdjecie1>img {
-    margin: 0;
-    width: 40vw;
-    justify-content: center;
-    align-content: center;
-    height: auto;
-    max-height: 300px;
-    max-width: 300px;
-
-}
-.naglowek1 {
-    margin-right: 0;
-    margin-left: 7%;
-}
-
-.dom1{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-}
-
-@media screen and (max-width: 550px) {
-	
-	.logo{
-		width: 50vw;
-		margin-top: 1vh;
-		margin-left: 1vh;
-		height: auto;
-	}
-    .menu-items {
-        display: block;
+    .zobaczwiecej {
+        background-color: #1c28af;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        padding: 14px 21px;
+        text-decoration: none;
+        order: 5;
+        border: 0;
+        margin-top: 3vh;
     }
-    .item {
-        display: block;
-        text-align: center;
+    
+    .zobaczwiecej:hover {
+        background-color: #0061a7;
     }
-	
-	.scrollup{
-    font-size: 15vw;
-}
-	
-    .item-active {
-        display: block;
-        text-align: center;
+    
+    .zobaczwiecej:focus {
+        outline: none;
     }
-    .zdjecie>img {
+    
+    .zobaczwiecej:active {
+        position: relative;
+        top: 1px;
+    }
+    
+    #scroll {
         display: none;
     }
-}
+    
+    @media screen and (max-width: 1300px) and (max-height: 2000px) {
+        .hej {
+            font-size: 5.3vw;
+        }
+        .h {
+            font-size: 4vw;
+        }
+        .scrollup {
+            font-size: 5vh;
+        }
+        .h-nier {
+            font-size: 4vw;
+        }
+        .paragraf {
+            font-size: 4vw;
+        }
+        .banner {
+            height: 100vh;
+        }
+        .zdjecie {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .zdjecie>img {
+            justify-content: center;
+            align-items: center;
+            width: 30vw;
+            height: auto;
+        }
+        .zdjecie1 {
+            margin: 0;
+            width: 100vw;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            order: 3;
+            margin-left: 0;
+            margin-right: 0%;
+        }
+        .zdjecie1>img {
+            margin: 0;
+            width: 40vw;
+            justify-content: center;
+            align-content: center;
+            height: auto;
+            max-height: 300px;
+            max-width: 300px;
+        }
+        .naglowek1 {
+            margin-right: 0;
+            margin-left: 7%;
+        }
+        .dom1 {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    }
+    
+    @media screen and (max-width: 550px) {
+        .logo {
+            width: 50vw;
+            margin-top: 1vh;
+            margin-left: 1vh;
+            height: auto;
+        }
+        .menu-items {
+            display: block;
+        }
+        .item {
+            display: block;
+            text-align: center;
+        }
+        .scrollup {
+            font-size: 15vw;
+        }
+        .item-active {
+            display: block;
+            text-align: center;
+        }
+        .zdjecie>img {
+            display: none;
+        }
+    }
